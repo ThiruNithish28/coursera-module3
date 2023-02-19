@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --t1-color:rgba(3, 213, 245, 0.607);
+  --t2-color:rgba(233, 180, 7, 0.689);
+  --t3-color:rgba(233, 7, 233, 0.493);
+  --bg-light:#fff;
+  --bg-color:grey;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  background-color:var(--bg-color);
+}
+.my-con,
+.main{
+  padding: 1rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-brand{
+  font-size: 2rem;
+}
+.navbar-collapse{
+  border-top: 1px solid grey;
+}
+ .nav-links{
+  text-decoration: none;
+  color: grey;
+}
+
+h1{
+  text-align: center;
+  color: var(--bg-light);
+  margin-bottom: 1rem;
+}
+h3{
+  font-size: 1.7rem;
+  color:var(--bg-light);
+  text-align: center;
+  width: 30%;
+  padding: .5rem;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  position:relative;
+  left:70%;
+}
+.box1,
+.box2,
+.box3{
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: .5rem;
+  background-color: var(--bg-light);
+  box-shadow: 3px 3px 6px black;
+}
+.box p{
+  margin: 0.7rem;
+}
+.box1 h3{
+  background-color: var(--t1-color);
+}
+.box2 h3{
+  
+  background-color: var(--t2-color);
+}
+.box3 h3{
+  
+  background-color: var(--t3-color);
+}
+
+.row{
+  width: 1200px;
+}
+@media (max-width:568px){
+  .my-con{
+    padding: 1rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .box{
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width:990px){
+  h1{
+    font-size: 3rem;
+  }
+  .box{
+    margin-bottom: 1rem;
+  }
+}
